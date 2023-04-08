@@ -4,7 +4,7 @@ app = Flask(__name__)
 
 items = ["Pierwszy element", "Drugi element", "Trzeci element"]
 
-@app.route('/items')
+@app.route('/')
 def show_items():
     return render_template("items.html", items=items)
 
